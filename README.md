@@ -2,7 +2,7 @@
 An HTML-form-based hack which confirms whether the page has been refreshed or hard reloaded
 
 ## HTML
-```
+```html
 <form class="my-form">
  <input class="my-input" type="text" />
 </form>
@@ -10,7 +10,7 @@ An HTML-form-based hack which confirms whether the page has been refreshed or ha
 _____
 
 ## CSS
-```
+```css
 .my-form {
   display: none;
 }
@@ -18,7 +18,7 @@ _____
 _____
 
 ## JS
-```
+```js
 const confirmHardReload = () => {
 
   let hardReload = (document.querySelector('.my-input').value === '') ? true : false;
